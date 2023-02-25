@@ -1,0 +1,5 @@
+migrations/
+venv/
+media/
+.config/
+__pycache/

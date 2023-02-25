@@ -23,13 +23,16 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-x8n3r*dzqr26v2j#uhrcx9d$_02glzen*d3842^c*2zltrc@0#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['.blossomfilm.xyz', '15.164.2.188',]
 
 #CORS_ORIGIN_WHITELIST = ['https://*.blossomfilm.site']
 CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOWED_ORIGIN = ['http://localhost:3000', 'https://localhost:3000', 'https://*.blossomfilm.site']
+CORS_ALLOWED_ORIGIN = [
+    '*'
+    #'http://localhost:3000', 'https://localhost:3000', 'https://*.blossomfilm.site'
+    ]
 #CORS_ALLOW_CREDENTIALS = True
 
 CORS_ALLOW_METHODS = (

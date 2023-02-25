@@ -14,5 +14,4 @@ urlpatterns = [
     path('', include(my_frame_router.urls)),
     path('<int:frame_id>', include(my_frame_router.urls))
 ]
-
 #urlpatterns += router.urls
